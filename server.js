@@ -9,8 +9,9 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
-var server =  app.listen(3456, "127.0.0.1", function () {
-   var host = server.address().address
-   var port = server.address().port
-   console.log("Example app listening at http://%s:%s", host, port)
-})
+ 
+const port = process.env.PORT || 3000
+
+app.listen(port,() => {
+  console.log(`Server running at port `+port);
+});
