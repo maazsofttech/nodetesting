@@ -20,7 +20,7 @@ const client = new MongoClient(url, { useUnifiedTopology: true });
 const dbName = "maaz";
 
 
-
+/*
  app.get('/users', function (req, res) {
     
 
@@ -33,7 +33,7 @@ client
             .collection("freemen").find()
             .toArray()  
       )
-    //   .then(cols => console.log("Collections", cols))
+     
 .then(cols => res.end(  JSON.stringify(cols) ))
       .finally(() => client.close());
 
@@ -41,7 +41,7 @@ client
       
    
  })
-
+*/
 
 
 
