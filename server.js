@@ -15,7 +15,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 var url = "mongodb+srv://freemen:freemen%40mongomongo@freemen-eo4l4.mongodb.net/maaz?retryWrites=true&w=majority";
 
-const client = new MongoClient(url, { useUnifiedTopology: true });  
+//const client = new MongoClient(url, { useUnifiedTopology: true });  
 
 const dbName = "maaz";
 
